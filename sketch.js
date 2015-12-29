@@ -7,7 +7,7 @@ var ballXMax;
 var ballYMax;
 
 function setup() {
-  createCanvas(window.innerWidth, window.innerHeight);
+  createCanvas(100, 100);
   background(255);
   angleMode(DEGREES);
   setUpImageAndBallMaxes();
@@ -43,7 +43,6 @@ function draw() {
   translate(-width/2, -height/2);
   image(img, ballY, ballX);
   pop();
-
 }
 
 function ballMovement() {
@@ -65,6 +64,6 @@ function ballMovement() {
 function windowResized() {
   resizeCanvas(window.innerWidth, window.innerHeight);
   setUpImageAndBallMaxes();
-  ballX =0;
-  ballY =0;
+  ballX=0;
+  ballY=0;
 }

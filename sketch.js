@@ -7,7 +7,7 @@ var ballXMax;
 var ballYMax;
 
 function setup() {
-  createCanvas(100, 100);
+  createCanvas(window.innerWidth, window.innerHeight);
   background(255);
   angleMode(DEGREES);
   setUpImageAndBallMaxes();
